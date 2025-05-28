@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etIdart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="30dp"
+            android:textSize="12sp"
+            android:hint="@string/id_arc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="IdArt" />
+
+        <EditText
+            android:id="@+id/etCantidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="90dp"
+            android:textSize="12sp"
+            android:hint="@string/cantidad"
+            app:layout_constraintStart_toEndOf="@+id/etIdart"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Cantidad" />
+
+        <EditText
+            android:id="@+id/etCosto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="90dp"
+            android:textSize="12sp"
+            android:hint="@string/costo"
+            app:layout_constraintStart_toEndOf="@+id/etCantidad"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Costo" />
+
+        <EditText
+            android:id="@+id/etCostod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="90dp"
+            android:textSize="12sp"
+            android:hint="@string/costodd"
+            app:layout_constraintStart_toEndOf="@+id/etCosto"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Costo $" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

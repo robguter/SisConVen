@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:paddingStart="15dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="5dp"
+    app:cardCornerRadius="4dp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:padding="2dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvwId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="18dp"
+            android:textSize="12sp"
+            android:background="@color/colorOnAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="0dp"
+            tools:text="@string/idi" />
+
+        <TextView
+            android:id="@+id/tvwNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="121dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwId"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="2dp"
+            tools:text="@string/nombreti" />
+
+        <TextView
+            android:id="@+id/tvwTelefono"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="85dp"
+            android:textSize="12sp"
+            android:background="@color/colorOnAccent"
+            app:layout_constraintStart_toEndOf="@+id/tvwNombre"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="2dp"
+            tools:text="@string/tel_fono" />
+
+        <TextView
+            android:id="@+id/tvwApodo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="80dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwTelefono"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="2dp"
+            tools:text="@string/apodo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

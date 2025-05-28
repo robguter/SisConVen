@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.venta.ClienteFragment">
+
+        <!-- Aqui -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tvwNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="sans-serif-black"
+                android:labelFor="@id/etNombre"
+                android:minWidth="120dp"
+                android:text="@string/nombre"
+                android:textAlignment="textEnd"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:autofillHints="true"
+                android:ems="10"
+                android:hint="@string/nombret"
+                android:inputType="text"
+                android:minWidth="210dp"
+                android:text=""
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvwNombre"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvwTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="sans-serif-black"
+                android:labelFor="@id/etTelefono"
+                android:minWidth="120dp"
+                android:text="@string/telefono"
+                android:textAlignment="textEnd"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/etTelefono"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvwNombre" />
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:autofillHints="true"
+                android:hint="@string/tel_fono"
+                android:inputType="text"
+                android:minWidth="210dp"
+                android:text=""
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvwTelefono"
+                app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+            <TextView
+                android:id="@+id/tvwApodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="sans-serif-black"
+                android:labelFor="@id/etApodo"
+                android:minWidth="120dp"
+                android:text="@string/apodo"
+                android:textAlignment="textEnd"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvwTelefono" />
+
+            <EditText
+                android:id="@+id/etApodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:autofillHints="true"
+                android:hint="@string/apodot"
+                android:inputType="text"
+                android:minWidth="210dp"
+                android:text=""
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvwApodo"
+                app:layout_constraintTop_toBottomOf="@+id/etTelefono" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--AQUI-->
+
+    <TextView
+        android:id="@+id/tvwIdTit"
+        style="@style/boldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:minWidth="22dp"
+        android:text="@string/id"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tvwNombTit"
+        style="@style/boldText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:minWidth="127dp"
+        android:text="@string/nombre"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tvwIdTit"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tvwTeleTit"
+        style="@style/boldText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:minWidth="86dp"
+        android:text="@string/tel_fono1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tvwNombTit"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tvwApodoTit"
+        style="@style/boldText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:minWidth="95dp"
+        android:text="@string/apodot"
+        android:textSize="12sp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintStart_toEndOf="@+id/tvwTeleTit"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvwRecyclr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:maxHeight="1000dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvwApodoTit"
+        tools:listitem="@layout/item_clte" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/guardar"
+        style="@style/CustomButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth="match_constraint" />
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/rvwRecyclr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorPrimary"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/tvIdart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="30dp"
+            android:textSize="12sp"
+            android:text="@string/idart"
+            android:hint="@string/id_arc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="IdArt" />
+
+        <TextView
+            android:id="@+id/tvCantidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="90dp"
+            android:textSize="12sp"
+            android:text="@string/cantidad"
+            android:hint="@string/cantidad"
+            app:layout_constraintStart_toEndOf="@+id/tvIdart"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Cantidad" />
+
+        <TextView
+            android:id="@+id/tvCosto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="90dp"
+            android:textSize="12sp"
+            android:text="@string/costo"
+            android:hint="@string/costo"
+            app:layout_constraintStart_toEndOf="@+id/tvCantidad"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Costo" />
+
+        <TextView
+            android:id="@+id/tvCostod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="90dp"
+            android:textSize="12sp"
+            android:text="@string/costod"
+            android:hint="@string/costodd"
+            app:layout_constraintStart_toEndOf="@+id/tvCosto"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Costo $" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

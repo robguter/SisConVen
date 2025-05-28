@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.inventario.ArticuloFragment">
+
+    <!-- Aqui -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <TextView
+            android:id="@+id/tvwIdcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="5dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:fontFamily="sans-serif-black"
+            android:labelFor="@id/etIdcat"
+            android:minWidth="120dp"
+            android:text="@string/cat_id"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etIdcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:autofillHints="true"
+            android:paddingTop="0dp"
+            android:paddingBottom="6dp"
+            android:hint="@string/catid"
+            android:inputType="text"
+            android:minWidth="210dp"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwIdcat"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvwArticulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:fontFamily="sans-serif-black"
+            android:labelFor="@id/etArticulo"
+            android:minWidth="120dp"
+            android:text="@string/art_culo"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/etArticulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvwIdcat" />
+
+        <EditText
+            android:id="@+id/etArticulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:autofillHints="true"
+            android:paddingTop="0dp"
+            android:paddingBottom="6dp"
+            android:hint="@string/artculo"
+            android:inputType="text"
+            android:minWidth="210dp"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwArticulo"
+            app:layout_constraintTop_toBottomOf="@+id/etIdcat" />
+
+        <TextView
+            android:id="@+id/tvwMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:fontFamily="sans-serif-black"
+            android:labelFor="@id/etMarca"
+            android:minWidth="120dp"
+            android:text="@string/marca"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvwArticulo" />
+
+        <EditText
+            android:id="@+id/etMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:autofillHints="true"
+            android:paddingTop="0dp"
+            android:paddingBottom="6dp"
+            android:hint="@string/marcaa"
+            android:inputType="text"
+            android:minWidth="210dp"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwMarca"
+            app:layout_constraintTop_toBottomOf="@+id/etArticulo" />
+
+        <TextView
+            android:id="@+id/tvwDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:fontFamily="sans-serif-black"
+            android:labelFor="@id/etDescripcion"
+            android:minWidth="120dp"
+            android:text="@string/descripcin"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvwMarca" />
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:autofillHints="true"
+            android:paddingTop="0dp"
+            android:paddingBottom="6dp"
+            android:hint="@string/descripci_n"
+            android:inputType="text"
+            android:minWidth="210dp"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwDescripcion"
+            app:layout_constraintTop_toBottomOf="@+id/etMarca" />
+
+        <TextView
+            android:id="@+id/tvwImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:fontFamily="sans-serif-black"
+            android:labelFor="@id/ivImage"
+            android:minWidth="120dp"
+            android:text="@string/imagen"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvwDescripcion" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ice_article"
+            android:hint="@string/imag_n"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            app:layout_constraintStart_toEndOf="@+id/tvwImage"
+            app:layout_constraintTop_toBottomOf="@+id/etDescripcion" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_save"
+            app:layout_constraintBottom_toTopOf="@+id/tvwTeleTit"
+            app:layout_constraintStart_toEndOf="@+id/ivImage"
+            app:layout_constraintTop_toBottomOf="@+id/etDescripcion" />
+
+        <TextView
+            android:id="@+id/tvwIdTit"
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:minWidth="22dp"
+            android:text="@string/id"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivImage" />
+
+        <TextView
+            android:id="@+id/tvwNombTit"
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:minWidth="127dp"
+            android:text="@string/nombre"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwIdTit"
+            app:layout_constraintTop_toBottomOf="@id/ivImage" />
+
+        <TextView
+            android:id="@+id/tvwTeleTit"
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:minWidth="86dp"
+            android:text="@string/tel_fono1"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwNombTit"
+            app:layout_constraintTop_toBottomOf="@id/ivImage" />
+
+        <TextView
+            android:id="@+id/tvwDescripcionTit"
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:minWidth="95dp"
+            android:text="@string/apodot"
+            android:textSize="12sp"
+            app:cardCornerRadius="6dp"
+            app:layout_constraintStart_toEndOf="@+id/tvwTeleTit"
+            app:layout_constraintTop_toBottomOf="@id/ivImage" />
+    <!--AQUI-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvwRecyclr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxHeight="500dp"
+            android:minHeight="300dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvwDescripcionTit"
+            tools:listitem="@layout/item_art" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:text="@string/guardar"
+        style="@style/CustomButton"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

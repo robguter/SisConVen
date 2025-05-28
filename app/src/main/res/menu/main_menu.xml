@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/navig_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/app_name"
+        android:checked="true"/>
+    <group android:id="@+id/mnuCompras" >
+        <item android:id="@+id/navig_compra"
+            android:icon="@drawable/ic_monetization_on"
+            android:title="@string/compras" />
+        <item android:id="@+id/navig_provee"
+            android:icon="@drawable/co_present"
+            android:title="@string/proveedores" />
+        <item android:id="@+id/navig_ctasxpag"
+            android:icon="@drawable/ic_payment"
+            android:title="@string/por_pagar"
+            app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/mnuVentas">
+        <item android:id="@+id/navig_pedido"
+            android:icon="@drawable/ic_article"
+            android:title="@string/pedido"
+            app:showAsAction="ifRoom" />
+        <item android:id="@+id/navig_venta"
+            android:icon="@drawable/ic_paid"
+            android:title="@string/ventas"
+            app:showAsAction="ifRoom" />
+        <item android:id="@+id/navig_cliente"
+            android:icon="@drawable/ic_person_add"
+            android:title="@string/clientes"
+            app:showAsAction="ifRoom" />
+        <item android:id="@+id/navig_ctasxcob"
+            android:icon="@drawable/ic_monetization_on"
+            android:title="@string/por_cobrar"
+            app:showAsAction="ifRoom" />
+    </group>
+    <group android:id="@+id/mnuInventario">
+        <item android:id="@+id/navig_categoria"
+            android:icon="@drawable/ic_category"
+            android:title="@string/categor_as"
+            app:showAsAction="never" />
+        <item android:id="@+id/navig_articulo"
+            android:icon="@drawable/ic_person_add"
+            android:title="@string/art_culos" />
+        <item android:id="@+id/navig_iva"
+            android:icon="@drawable/ic_payment"
+            android:title="@string/iva" />
+    </group>
+    <item android:id="@+id/navig_salir"
+        android:icon="@drawable/ic_output"
+        android:title="@string/salir"
+        android:checked="false" />
+</menu>

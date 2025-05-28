@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:paddingStart="15dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="5dp"
+    app:cardCornerRadius="4dp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:padding="2dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgImag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:minHeight="60dp"
+            android:background="@drawable/ic_person_add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvwId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/colorOnAccent"
+            android:maxWidth="50dp"
+            android:minWidth="45dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvwIdcat"
+            app:layout_constraintStart_toEndOf="@+id/imgImag"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/idi" />
+
+        <TextView
+            android:id="@+id/tvwIdcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:maxWidth="50dp"
+            android:minWidth="45dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvwArticulo"
+            app:layout_constraintStart_toEndOf="@+id/tvwId"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Idcat" />
+
+        <TextView
+            android:id="@+id/tvwArticulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorOnAccent"
+            android:minWidth="85dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvwIdcat"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Articulo" />
+
+        <TextView
+            android:id="@+id/tvwMarca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:minWidth="80dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvwDescrip"
+            app:layout_constraintStart_toEndOf="@+id/imgImag"
+            app:layout_constraintTop_toBottomOf="@+id/tvwId"
+            tools:text="Marca" />
+
+        <TextView
+            android:id="@+id/tvwDescrip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:minWidth="80dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvwMarca"
+            app:layout_constraintTop_toBottomOf="@+id/tvwArticulo"
+            tools:text="Descripción" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

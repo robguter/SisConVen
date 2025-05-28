@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:paddingStart="15dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="5dp"
+    app:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:padding="3dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvwIdcat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="20dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/cat_id_mas" />
+
+        <TextView
+            android:id="@+id/tvwCateg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="160dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwIdcat"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/cat_name_mas" />
+
+        <TextView
+            android:id="@+id/tvwDescr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:minWidth="160dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tvwCateg"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/cat_desc_mas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.NavigationDrawer" parent="Theme.MaterialComponents.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <!-- Secondary brand color. -->
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorSecondary</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="boldText">
+        <item name="android:textStyle">bold|normal</item>
+        <item name="android:background">@drawable/borde</item>
+        <item name="android:textColor">#CCFFFFFF</item>
+    </style>
+    <style name="normalText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#C0C0C0</item>
+        <item name="android:background">@drawable/borde</item>
+    </style>
+    <style name="CstmSpnnr" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="strokeColor">@color/colorSecondary</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="android:layout_marginEnd">@dimen/list_padding</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">#CCFFFFFF</item>
+        <item name="android:popupBackground">@drawable/mi_borde</item>
+        <item name="android:background">@drawable/borde_fdo</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="CustomSpnnr" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/list_padding</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:popupBackground">@drawable/mi_borde</item>
+        <item name="android:background">@drawable/mi_borde</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:popupTheme">@drawable/borde_fdo</item>
+        <item name="android:foreground">@drawable/borde</item>
+        <item name="android:foregroundTint">@color/design_default_color_background</item>
+        <item name="android:theme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
+    </style>
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@drawable/text_color_selector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="CustomButton" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#AEC6CF</item>
+        <item name="android:background">@drawable/mi_borde</item>
+        <item name="android:drawableLeft">@drawable/ic_save</item>
+    </style>
+    <!-- <item name="android:popupBackground">@drawable/mi_borde</item>
+        <item name="android:popupTheme">@drawable/borde_fdo</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:foregroundTint">@color/design_default_color_background</item>
+        <item name="android:foreground">@drawable/borde</item>
+        <item name="strokeColor">@color/colorSecondary</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="android:theme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item> -->
+    <style name="Theme.SisConVen" parent="Base.Theme.SisConVen" />
+    <dimen name="list_height">5dp</dimen>
+    <dimen name="list_padding">1dp</dimen>
+</resources>

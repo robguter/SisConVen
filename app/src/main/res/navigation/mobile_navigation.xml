@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navig_home">
+
+    <fragment
+        android:id="@+id/navig_home"
+        android:name="com.sisterag.sisconven.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navig_home_to_navig_compra"
+            app:destination="@id/navig_compra" />
+        <action
+            android:id="@+id/action_navig_home_to_navig_venta"
+            app:destination="@id/navig_venta" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navig_compra"
+        android:name="com.sisterag.sisconven.ui.compra.CompraFragment"
+        android:label="Compra"
+        tools:layout="@layout/fragment_compra" >
+        <action
+            android:id="@+id/action_navig_compra_to_navig_home"
+            app:destination="@id/navig_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navig_ctasxpag"
+        android:name="com.sisterag.sisconven.ui.compra.XpagarFragment"
+        android:label="@string/por_pagar"
+        tools:layout="@layout/fragment_xpagar" >
+        <action
+            android:id="@+id/action_navig_ctasxpag_to_navig_compra"
+            app:destination="@id/navig_compra" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navig_provee"
+        android:name="com.sisterag.sisconven.ui.compra.ProveeFragment"
+        android:label="@string/proveedores"
+        tools:layout="@layout/fragment_provee" >
+        <action
+            android:id="@+id/action_navig_provee_to_navig_compra"
+            app:destination="@id/navig_compra" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navig_pedido"
+        android:name="com.sisterag.sisconven.ui.venta.PedidoFragment"
+        android:label="Pedido"
+        tools:layout="@layout/fragment_pedido" >
+        <action
+            android:id="@+id/action_navig_pedido_to_navig_home"
+            app:destination="@id/navig_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navig_venta"
+        android:name="com.sisterag.sisconven.ui.venta.VentaFragment"
+        android:label="Venta"
+        tools:layout="@layout/fragment_venta" >
+        <action
+            android:id="@+id/action_navig_venta_to_navig_home"
+            app:destination="@id/navig_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navig_cliente"
+        android:name="com.sisterag.sisconven.ui.venta.ClienteFragment"
+        android:label="@string/proveedores"
+        tools:layout="@layout/fragment_cliente" >
+        <action
+            android:id="@+id/action_navig_cliente_to_navig_venta"
+            app:destination="@id/navig_venta" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navig_ctasxcob"
+        android:name="com.sisterag.sisconven.ui.venta.XcobrarFragment"
+        android:label="@string/por_pagar"
+        tools:layout="@layout/fragment_xcobrar" >
+        <action
+            android:id="@+id/action_navig_ctasxcob_to_navig_venta"
+            app:destination="@id/navig_venta" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navig_categoria"
+        android:name="com.sisterag.sisconven.ui.inventario.CategoriaFragment"
+        android:label="@string/cat_name_mas"
+        tools:layout="@layout/fragment_categoria" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navig_articulo"
+        android:name="com.sisterag.sisconven.ui.inventario.ArticuloFragment"
+        android:label="@string/art_culos"
+        tools:layout="@layout/fragment_articulo" >
+    </fragment>
+
+</navigation>

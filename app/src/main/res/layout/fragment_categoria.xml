@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.inventario.CategoriaFragment">
+
+    <TextView
+        android:id="@+id/tvwCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-black"
+        android:labelFor="@id/etCategoria"
+        android:minWidth="120dp"
+        android:text="@string/cat_name_tit"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/etCategoria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCategoria"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:height="48dp"
+        android:autofillHints="true"
+        android:ems="10"
+        android:hint="@string/cat_name_mas"
+        android:inputType="text"
+        android:minWidth="210dp"
+        android:text=""
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvwCategoria"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/tvwdescrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-black"
+        android:labelFor="@id/tvwCategoria"
+        android:minWidth="120dp"
+        android:text="@string/cat_desc_tit"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/etDescrip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvwCategoria" />
+
+    <EditText
+        android:id="@+id/etDescrip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="true"
+        android:hint="@string/cat_desc_mas"
+        android:inputType="text"
+        android:minWidth="210dp"
+        android:text=""
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvwdescrip"
+        app:layout_constraintTop_toBottomOf="@+id/etCategoria" />
+    <!--AQUI-->
+
+    <TextView
+        android:id="@+id/tvwIdcatTit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:minWidth="20dp"
+        android:text="@string/cat_id_tit"
+        android:textSize="12sp"
+        style="@style/boldText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDescrip" />
+
+    <TextView
+        android:id="@+id/tvwCategTit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:minWidth="158dp"
+        android:text="@string/cat_name_tit"
+        android:textSize="12sp"
+        style="@style/boldText"
+        app:layout_constraintStart_toEndOf="@+id/tvwIdcatTit"
+        app:layout_constraintTop_toBottomOf="@id/etDescrip" />
+
+    <TextView
+        android:id="@+id/tvwDescrTit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:minWidth="160dp"
+        android:text="@string/cat_desc_tit"
+        android:textSize="12sp"
+        style="@style/boldText"
+        app:layout_constraintStart_toEndOf="@+id/tvwCategTit"
+        app:layout_constraintTop_toBottomOf="@id/etDescrip" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvwCate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:maxHeight="1000dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvwDescrTit"
+        tools:listitem="@layout/item_cate" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/strgurda"
+        style="@style/CustomButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth="match_constraint" />
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/rvwCate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

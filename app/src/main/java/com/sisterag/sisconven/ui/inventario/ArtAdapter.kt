@@ -39,7 +39,7 @@ class ArtAdapter(private val artList:List<ArticuloDto>): RecyclerView.Adapter<Ar
                 tvwDescrip.text = currItem.descripcion
 
                 Glide.with(context)
-                    .load(IMG_URL + currItem.image)
+                    .load(IMG_URL + currItem.imagen)
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
                     .centerCrop()
                     .into(imgImag)

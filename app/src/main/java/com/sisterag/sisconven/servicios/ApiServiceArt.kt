@@ -1,5 +1,6 @@
 package com.sisterag.sisconven.servicios
 
+import com.sisterag.sisconven.modelos.inventario.ArtResponse
 import com.sisterag.sisconven.modelos.inventario.ArticuloDto
 import com.sisterag.sisconven.modelos.inventario.UploadResponse
 import com.sisterag.sisconven.utiles.EndPoint.ActArtUrl
@@ -10,6 +11,7 @@ import com.sisterag.sisconven.utiles.EndPoint.GetAllArtUrl
 import com.sisterag.sisconven.utiles.EndPoint.GetArtXidUrl
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import okhttp3.ResponseBody
 import retrofit2.Call
 
 import retrofit2.Response
@@ -52,9 +54,13 @@ interface ApiServiceArt {
     )
     @Multipart
     @POST(AddArtUrli) // Ruta de la API en tu servidor
-    fun uploadImage(
-        @Part image: MultipartBody.Part
-    ): Call<UploadResponse>
+    suspend fun uploadImage(
+        @Part("idcat") idcat: RequestBody,
+        @Part("articulo") articulo: RequestBody,
+        @Part("marca") marca: RequestBody,
+        @Part("descripcion") descripcion: RequestBody,
+        @Part imagen: MultipartBody.Part
+    ): Response<ArtResponse>
 
     @FormUrlEncoded
     @POST(AddArtUrl)

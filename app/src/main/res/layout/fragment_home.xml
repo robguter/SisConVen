@@ -5,14 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/imagen_inicial"
-        android:src="@drawable/ic_launcher_playstore"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp" />
-
     <ProgressBar
         android:id="@+id/pbInicio"
         android:layout_width="wrap_content"

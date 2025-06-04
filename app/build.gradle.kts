@@ -105,6 +105,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$kCA")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kCC")
 
+    // Gson (si no usas el converter de Retrofit)
+    implementation("com.google.code.gson:gson:2.12.1")
+
     //ksp("com.github.bumptech.glide:compiler:$gld")
     implementation("com.github.bumptech.glide:glide:$gld")
     annotationProcessor("com.github.bumptech.glide:compiler:$gld")

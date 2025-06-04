@@ -38,6 +38,8 @@ class UploadRequestBody(
     }
 
     interface UploadCallBack {
+        abstract val cacheDir: Any
+
         fun onProgressUpdate(porcentaje: Int)
     }
     inner class ProgressUpdate(
